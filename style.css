@@ -1,0 +1,19 @@
+*{
+    
+    .message-box {
+        display: none; /* 消息框樣式 */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f1d8a9;
+        border: 1px solid #f6a65f;
+        padding: 20px;
+        box-shadow: 0 0 20px rgb(215, 109, 28);
+        text-align: center;
+        width: 300px;
+        height: 100px;
+        z-index: 1000;
+    }
+    
+}

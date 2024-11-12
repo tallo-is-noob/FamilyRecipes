@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>社會料理!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <marquee direction="right" behavior="alternate" scrollamount="15"><h1 id="header">An idiot sandwich</h1></marquee>
+        <img src='images/gordon.jpg' alt='Chef Gordon' style="height: 400px;">
+        <h3 id='image label'>A collection of recipes from pop culture! <b>maybe</b>(社會料理的饗宴</h3>
+        <div>
+            <ul>
+                <li><a href='./recipes/milk-steak.html' target="_parent"><h2>Milk steak</h2></a></li>
+                <li><a href="./recipes/gargle-blaster.html" target="_parent"><h2>Pan galactic gargle blaster</h2></a></li>
+                <li><a href="./recipes/piemonade.html" target="_parent"><h2>Piemonade</h2></a></li>
+                <li><a id="first" href="#dessert"><h2><font color="orange"><b>NEW</b> Dessert</font></h2></a></li>
+            </ul>
+        </div>
+        <div id="dessert" class="message-box">
+            <h3>I don't care. ：)</h3><br>
+            <button id="close">I see</button>
+        </div>
+
+        <script>
+        //顯示訊息框
+            document.getElementById('first').onclick = function() {
+            document.getElementById('dessert').style.display = 'block';
+    };
+        
+        //關閉訊息框
+            document.getElementById('close').onclick = function() {
+            document.getElementById('dessert').style.display = 'none';
+    };
+        </script>
+
+        <a href="#header">Return to top</a>
+    </body>
+</html>
